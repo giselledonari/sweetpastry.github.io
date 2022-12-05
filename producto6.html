@@ -7,7 +7,7 @@
     <title>Document</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="producto">
     <nav class="navbar bg-light">
@@ -17,9 +17,9 @@
             Sweet Bakery
           </a>
           <nav class="nav justify-content-right">
-            <a class="nav-link text-dark" href="/index.html">Home</a>
-            <a class="nav-link text-dark" href="/productos.html">Productos</a>
-            <a class="nav-link text-dark" href="/carrito.html">Carrito</a>
+            <a class="nav-link text-dark" href="./index.html">Home</a>
+            <a class="nav-link text-dark" href="./productos.html">Productos</a>
+            <a class="nav-link text-dark nav-carrito" href="./carrito.html">Carrito <span id="numero-carrito">(0)</span></a>
           </nav>
         </div>
     </nav>
@@ -27,7 +27,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-6 text-center">
-                <img src="/img/French-Apple-Cake-Feature.jpg" alt="Queque Manzana" height="500px">
+                <img src="./img/French-Apple-Cake-Feature.jpg" alt="Queque Manzana" height="500px">
             </div>
             <div class="col-6 ">
                 <h3 class="mb-3">Queque de Manzana</h3>
@@ -35,18 +35,23 @@
                     <p>Disponible para: 
                     <ul>
                         <li>
-                            12 Porciones $7.990  <input type="text" name="cantidad" placeholder="N°" size="1">   
+                            12 Porciones $7.990 
+                            <div class="botones">
+                                <button id=11 class="btn mt-3 btn-menos">-</button>
+                                <p  id="cantidad11" class="cantidad tamaño-texto input">0</p>
+                                <button id=11 class="btn mt-3 btn-mas">+</button>   
+                            </div> 
                         </li>
                        
                     </ul>
                 </p>
-                <button class="btn btn-carro mt-3"> Agregar al carro</button>
                 
-                <button class="btn btn-carro2 mt-3"><a class="aCarrito2" href="/carrito.html">Ver mi carro</a></button>
+                
+                <button class="btn btn-carro2 mt-3"><a class="aCarrito2" href="./carrito.html">Ver mi carro</a></button>
             </div>
         </div>
     </div>
-    <footer class="text-center bg-light">
+    <footer class="text-center bg-light fixed-bottom">
         <div class="text-center text-dark p-3">
             © 2022 Copyright: Sweet Pastry || Todos los derechos Reservados
           </div>
@@ -55,5 +60,7 @@
 
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="./javascript/data.js"></script>
+<script src="./javascript/app.js"></script>
 </body>
 </html>
